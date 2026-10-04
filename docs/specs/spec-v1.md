@@ -81,7 +81,13 @@ Le cadrage laissait plusieurs points ouverts. Ils sont décidés ici :
 - un absentéiste qui vote choisit oui ou non à pile ou face ;
 - un bâtiment ne rapporte qu'à partir du tour suivant sa construction ;
 - une proposition adoptée sans fonds suffisants n'est pas construite ;
-- la vérification de victoire ou de défaite se fait en fin de tour.
+- la vérification de victoire ou de défaite se fait en fin de tour ;
+- la victoire compte si l'objectif est atteint à la fin du tour 30 ;
+- les votes s'affichent en nombre de membres et en tokens, par exemple « oui 4 (400) » ;
+- l'auteur d'une proposition vote selon son profil, comme les autres membres ;
+- un bâtiment adopté est construit si la trésorerie est supérieure ou égale à son coût, sans tenir compte des frais fixes du tour ;
+- une trésorerie à exactement 0 n'est pas une défaite ;
+- une trésorerie négative au dernier tour est une défaite pour « trésorerie négative ».
 
 ---
 

@@ -10,20 +10,21 @@ Un laboratoire open source pour tester, partie après partie, quelles règles pe
 
 ## État actuel
 
-Version **V0** : un premier programme, `vote.py`, qui simule un seul vote de DAO. Dix membres votent au hasard (oui, non ou abstention), puis le programme vérifie le quorum et la majorité et affiche le résultat.
+Version **V1** en cours : une partie complète se joue dans le terminal. Dix membres (4 prudents, 3 dépensiers, 3 absentéistes) votent tour après tour pour construire des bâtiments avec la trésorerie commune. La partie s'arrête sur une victoire (2 000 crédits), une défaite (trésorerie négative) ou au bout de 30 tours.
 
-## Lancer le programme
+## Lancer une partie
 
 Prérequis : Python 3 (aucune bibliothèque à installer).
 
 ```bash
-python3 vote.py
+python3 src/jouer.py
 ```
 
-Les réglages (nombre de membres, quorum, majorité, graine aléatoire) se trouvent en haut du fichier.
+Chaque tour s'affiche sur une ligne, puis le résultat final. Les réglages (tokens, trésorerie, quorum, bâtiments, graine aléatoire…) se trouvent dans `src/reglages.py`. Avec la même graine, on obtient exactement la même partie.
 
 ## Organisation
 
+- `src/` : le code du simulateur. La commande `python3 src/jouer.py` lance une partie.
 - `docs/` : la documentation du projet, à commencer par le document de cadrage.
 - `lecons/` : les leçons écrites au fil du projet, pour apprendre en partant de zéro.
 

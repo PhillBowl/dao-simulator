@@ -54,4 +54,4 @@ Ne réécris pas le prompt à ma place, sauf si je le demande.
 
 ## Commandes
 
-- Lancer le programme : `python3 vote.py`
+- Lancer une partie : `python3 src/jouer.py`

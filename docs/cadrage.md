@@ -375,8 +375,8 @@ Les membres ne sont pas des IA. Ce sont des règles de décision très simples.
 
 ### 11.5 Victoire et défaite
 
-- **Victoire** : la trésorerie atteint **2 000 crédits** avant le tour 30.
-- **Défaite** : la trésorerie passe sous zéro, ou le tour 30 arrive sans victoire.
+- **Victoire** : la trésorerie atteint **2 000 crédits** à la fin d'un tour, au plus tard à la fin du tour 30.
+- **Défaite** : la trésorerie passe sous zéro, ou le tour 30 se termine sans victoire.
 
 Ces chiffres sont des valeurs de départ. Ils seront ajustés une fois la V1 codée, pour que la partie ne soit ni gagnée ni perdue d'avance.
 
