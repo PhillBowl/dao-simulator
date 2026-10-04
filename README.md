@@ -22,9 +22,20 @@ python3 src/jouer.py
 
 Chaque tour s'affiche sur une ligne, puis le résultat final. Les réglages (tokens, trésorerie, quorum, bâtiments, graine aléatoire…) se trouvent dans `src/reglages.py`. Avec la même graine, on obtient exactement la même partie.
 
+## Lancer les tests
+
+Des tests automatiques vérifient que le code respecte les règles de la spec V1 : quorum, majorité, profils de vote, construction, revenus, fin de partie, reproductibilité et réglages par défaut. Depuis la racine du projet :
+
+```bash
+python3 -m unittest discover -s tests -v
+```
+
+Chaque test affiche `ok` s'il passe. S'il échoue, un message explique la règle de la spec qui n'est pas respectée.
+
 ## Organisation
 
 - `src/` : le code du simulateur. La commande `python3 src/jouer.py` lance une partie.
+- `tests/` : les tests automatiques des règles du jeu.
 - `docs/` : la documentation du projet, à commencer par le document de cadrage.
 - `lecons/` : les leçons écrites au fil du projet, pour apprendre en partant de zéro.
 

@@ -9,7 +9,7 @@ Détail des user stories : `docs/specs/spec-v1.md`.
 | Ordre | User story | Leçon | Statut |
 |---|---|---|---|
 | 1 | US1 — Jouer une partie complète | Leçon 2 | Terminé |
-| 2 | US2 — Tester les règles | Leçon 3 | À faire |
+| 2 | US2 — Tester les règles | Leçon 3 | Terminé |
 | 3 | US3 — Régler, sauvegarder, réinitialiser | Leçon 4 | À faire |
 | 4 | US4 — Le rapport de partie (décision sur les graphiques avant de commencer) | Leçon 5 | À faire |
 | 5 | US5 — Les leçons automatiques | Leçon 5 | À faire |

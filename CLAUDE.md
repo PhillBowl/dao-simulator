@@ -39,13 +39,16 @@ Ne réécris pas le prompt à ma place, sauf si je le demande.
 - Un code lisible par un débutant plutôt que court ou astucieux : une étape par ligne, pas de lambda ni de compréhension de liste, un commentaire qui explique chaque bloc.
 - Une graine aléatoire fixe (constante `GRAINE_ALEATOIRE`, passée à `random.seed()` au début du programme), pour des résultats reproductibles.
 - Après une modification, lance le programme et vérifie qu'il s'exécute sans erreur.
+- Avant de déclarer une tâche terminée, lance tous les tests : ils doivent tous passer. Ne modifie jamais un test pour le faire passer sans mon accord.
 
 ## Organisation des dossiers
 
 - `docs/` : cadrage et specs de version.
 - `lecons/` : les leçons, publiques.
 - `journal/` : mon journal de bord, privé.
-- Plus tard : `src/` (code), `tests/` (tests), `config/` (paramètres).
+- `src/` : le code du simulateur.
+- `tests/` : les tests automatiques, un fichier `test_*.py` par groupe de règles.
+- Plus tard : `config/` (paramètres).
 
 ## Sécurité
 
@@ -55,3 +58,4 @@ Ne réécris pas le prompt à ma place, sauf si je le demande.
 ## Commandes
 
 - Lancer une partie : `python3 src/jouer.py`
+- Lancer tous les tests : `python3 -m unittest discover -s tests -v`
